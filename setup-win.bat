@@ -45,4 +45,6 @@ npm i -g eslint
 ECHO "Installed global node modules:" && npm list -g --depth=0;
 
 ECHO "\n Done"
+
+ECHO "Please restart your terminal.
 PAUSE
