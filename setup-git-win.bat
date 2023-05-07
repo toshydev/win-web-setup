@@ -4,7 +4,7 @@ ECHO "(Please follow the instructions in the terminal)"
 
 set /p fullname='Enter your full name (e.g. John Doe): '
 git config --global user.name %fullname%
-set -p email='Enter the e-mail you use for GitHub (john@johndoe.com): '
+set /p email='Enter the e-mail you use for GitHub (john@johndoe.com): '
 git config --global user.email %email%
 git config --global pull.ff "only"
 git config --global init.defaultBranch main
