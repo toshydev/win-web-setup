@@ -4,7 +4,7 @@ ECHO "(Version control system)"
 
 winget install --id Git.Git -e --source winget
 
-ECHO "\n Done"
+ECHO "Done"
 
 :: Installing GitHub CLI
 ECHO "Installing Command Line Tools..."
