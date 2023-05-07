@@ -46,6 +46,5 @@ ECHO "Installed global node modules:" && npm list -g --depth=0;
 
 ECHO "Done"
 
-rm .\setup.bat
-ECHO "Please restart your terminal.
+ECHO "Please restart your terminal and delete setup.bat"
 PAUSE
