@@ -1,5 +1,4 @@
 :: Installing Git
-ECHO OFF
 ECHO "Installing Git..."
 ECHO "(Version control system)"
 
