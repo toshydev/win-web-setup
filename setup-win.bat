@@ -1,50 +1,50 @@
 :: Installing Git
 ECHO OFF
-ECHO "\n Installing Git..."
-ECHO "(Version control system)\n"
+ECHO "Installing Git..."
+ECHO "(Version control system)"
 
 winget install --id Git.Git -e --source winget
 
 ECHO "\n Done"
 
 :: Installing GitHub CLI
-ECHO "\n🧪 Installing Command Line Tools..."
-ECHO "(GitHub CLI, Oh My Posh, Fast Node Manager)\n"
+ECHO "Installing Command Line Tools..."
+ECHO "(GitHub CLI, Oh My Posh, Fast Node Manager)"
 
 winget install --id GitHub.cli
 winget install JanDeDobbeleer.OhMyPosh -s winget
 winget install Schniz.fnm
 
-ECHO "\n Done"
+ECHO "Done"
 
 :: Installing Win 11 apps
-ECHO "\n🧪 Installing Win 11 Apps..."
-ECHO "(Visual Studio Code)\n"
+ECHO "Installing Win 11 Apps..."
+ECHO "(Visual Studio Code)"
 
 winget install vscode
 
-ECHO "\n Done"
+ECHO "Done"
 
 :: Set up node lts
-ECHO "\n Installing Node LTS..."
-ECHO "(JavaScript runtime for local development)\n"
+ECHO "Installing Node LTS..."
+ECHO "(JavaScript runtime for local development)"
 
 fnm install lts-latest
 fnm use lts-latest
 ECHO "Installed Node Version:"
 node -v
 
-ECHO "\n Done"
+ECHO "Done"
 
 :: Install global node packages
-ECHO "\n Installing Global Node Modules..."
-ECHO "(Node Package Manager - npm)\n"
+ECHO "Installing Global Node Modules..."
+ECHO "(Node Package Manager - npm)"
 
 npm i -g eslint
 
 ECHO "Installed global node modules:" && npm list -g --depth=0;
 
-ECHO "\n Done"
+ECHO "Done"
 
 ECHO "Please restart your terminal.
 PAUSE
