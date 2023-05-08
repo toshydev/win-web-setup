@@ -1,5 +1,6 @@
 # Git and GitHub Setup
 
+Get-Service ssh-agent | Set-Service -StartupType Automatic
 Start-Service ssh-agent;
 Write-Host "Git and GitHub Setup ⚙️" -BackgroundColor Black -ForegroundColor Cyan
 Write-Host "(Please follow the instructions in the terminal)" -BackgroundColor Black -ForegroundColor Yellow
