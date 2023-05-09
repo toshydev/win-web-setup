@@ -99,6 +99,14 @@ Open **Windows Terminal as Administrator** and paste and run this script:
 
 The [script](https://github.com/toshydev/win-web-setup/blob/main/setup-win.ps1) installs the apps from the list as well as the _eslint_ package for error linting in **VSC**.
 
+#### Error
+If you encounter this error:
+![image](https://github.com/toshydev/win-web-setup/assets/91165689/7821241a-e331-444a-b6b1-797ba14d43b2)
+You need to temporarily allow PowerShell to run unsigned scripts by running theses commands:
+```
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process
+```
+
 ## Git & GitHub
 
 To be able to connect your remote **GitHub** repositories with your local projects you need to set up your **Git** config and authenticate with the **GitHub CLI**.
@@ -113,7 +121,20 @@ Make sure to open **Windows Terminal as Administrator** and paste and run this s
 
 The [script](https://github.com/toshydev/win-web-setup/blob/main/setup-git-win.ps1) sets your **Git** username and email globally, creates a new SSH key, adds the key to your SSH agent and uses these settings with the **GitHub CLI** to authorize you without a password.
 
+#### Error
+If you encounter this error:
+![image](https://github.com/toshydev/win-web-setup/assets/91165689/7821241a-e331-444a-b6b1-797ba14d43b2)
+You need to temporarily allow PowerShell to run unsigned scripts by running theses commands:
+```
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process
+```
+
 ## The End
+
+**ATTENTION** If you have set the **Execution Policy** to _unrestricted_ earlier you should reset it to its initial value by running this command:
+```
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+```
 
 Good Work! You did it! Nothing can stop you!
 Happy Hacking 👾
