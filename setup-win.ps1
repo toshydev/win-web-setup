@@ -6,10 +6,8 @@ Write-Host "Installing Apps ⚙️" -BackgroundColor Black -ForegroundColor Cyan
 $apps = @(
     @{name = "Git.Git"},
     @{name = "JanDeDobbeleer.OhMyPosh" },
-    @{name = "Microsoft.PowerShell" },
     @{name = "Microsoft.PowerToys" },
     @{name = "Microsoft.VisualStudioCode" },
-    @{name = "Microsoft.WindowsTerminal" },
     @{name = "Mozilla.Firefox.DeveloperEdition" },
     @{name = "Schniz.fnm" }
 );
