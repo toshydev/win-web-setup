@@ -33,7 +33,7 @@ Write-Host "Installed Node Version: " $(node -v) -BackgroundColor Black -Foregro
 Write-Host "Installing Global Node Modules ⚙️" -BackgroundColor Black -ForegroundColor Cyan
 npm i -g eslint
 
-Write-Host "Installed global node modules:" -BackgroundColor Black -ForegroundColor Yellow && npm list -g --depth=0;
+(Write-Host "Installed global node modules:" -BackgroundColor Black -ForegroundColor Yellow) && npm list -g --depth=0;
 
 Write-Host "Configuring terminal 🧪" -BackgroundColor Black -ForegroundColor Cyan
 Write-Output "oh-my-posh init pwsh --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/robbyrussell.omp.json' | Invoke-Expression" >> $PROFILE
