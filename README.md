@@ -18,7 +18,7 @@ cmd /c curl https://raw.githubusercontent.com/toshydev/win-web-setup/main/setup.
 - No need to add new profiles, continue with step `4`
 
 4. Install Apps
-   Run in **Windows Terminal**:
+   Run in **Windows Terminal as Administrator**:
 
 ```
 & ([scriptblock]::Create((irm https://raw.githubusercontent.com/toshydev/win-web-setup/main/setup-win.ps1)))
@@ -28,7 +28,7 @@ cmd /c curl https://raw.githubusercontent.com/toshydev/win-web-setup/main/setup.
    Run in **Windows Terminal**:
 
 ```
-& ([scriptblock]::Create((irm https://raw.githubusercontent.com/toshydev/win-web-setup/main/setup-win.ps1)))
+& ([scriptblock]::Create((irm https://raw.githubusercontent.com/toshydev/win-web-setup/main/setup-git-win.ps1)))
 ```
 
 ---
