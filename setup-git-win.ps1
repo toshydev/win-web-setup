@@ -10,8 +10,8 @@ git config --global pull.ff "only";
 git config --global init.defaultBranch main;
 ssh-keygen -t ed25519 -C $email;
 Write-Output "Host *\n    AddKeysToAgent yes\n    UseKeychain yes\n    IdentityFile ~/.ssh/id_ed25519" | Out-File -FilePath $HOME\.ssh\config;
-ssh-add;
-ssh-keyscan -t rsa github.com >> $HOME\.ssh\known-hosts;
+ssh-add $HOME/.ssh/id_ed25519;
+ssh-keyscan -t rsa github.com >> $HOME/.ssh/known-hosts;
 
 Write-Host "Authenticating with GitHub.com 🔑" -BackgroundColor Black -ForegroundColor Cyan
 gh auth login;
